@@ -1,0 +1,42 @@
+[kaushal27@webminal.org ~]$cd newdir                                                                                       
+-sh: cd: newdir: No such file or directory                                                                                 
+[kaushal27@webminal.org ~]$mkdir newdir                                                                                    
+[kaushal27@webminal.org ~]$ls                                                                                              
+aaa?zzz  awk  date  gawk  newdir  passwd
+
+
+[kaushal27@webminal.org ~]$ls -lrth                                                                                        
+total 932K                                                                                                                 
+-rwx------. 1 kaushal27 kaushal27  61K Sep 20 01:42 date
+-rwx------. 1 kaushal27 kaushal27 419K Sep 20 02:27 awk
+-rwx------. 1 kaushal27 kaushal27 419K Sep 20 02:27 gawk
+-rwx------. 1 kaushal27 kaushal27  28K Sep 20 02:29 passwd
+-rw-rw-r--. 1 kaushal27 kaushal27    0 Oct  2 19:52 aaa?zzz                                                                
+drwxrwxr-x. 2 kaushal27 kaushal27    6 Oct 14 01:01 newdir
+[kaushal27@webminal.org ~]$cd mkdir                                                                                        
+-sh: cd: mkdir: No such file or directory                                                                                  
+[kaushal27@webminal.org ~]$cd newdir                                                                                       
+[kaushal27@webminal.org newdir]$touch a                                                                                    
+[kaushal27@webminal.org newdir]$touch b                                                                                    
+[kaushal27@webminal.org newdir]$touch c                                                                                    
+[kaushal27@webminal.org newdir]$ls -lrth                                                                                   
+total 0                                                                                                                    
+-rw-rw-r--. 1 kaushal27 kaushal27 0 Oct 14 01:02 a                                                                         
+-rw-rw-r--. 1 kaushal27 kaushal27 0 Oct 14 01:02 b                                                                         
+-rw-rw-r--. 1 kaushal27 kaushal27 0 Oct 14 01:02 c                                                                         
+[kaushal27@webminal.org newdir]$cat a                                                                                      
+[kaushal27@webminal.org newdir]$chmod 700 a                                                                                
+[kaushal27@webminal.org newdir]$ls -lrth                                                                                   
+total 0                                                                                                                    
+-rwx------. 1 kaushal27 kaushal27 0 Oct 14 01:02 a
+-rw-rw-r--. 1 kaushal27 kaushal27 0 Oct 14 01:02 b                                                                         
+-rw-rw-r--. 1 kaushal27 kaushal27 0 Oct 14 01:02 c                                                                         
+[kaushal27@webminal.org newdir]$cat a                                                                                      
+[kaushal27@webminal.org newdir]$chmod 700 b                                                                                
+[kaushal27@webminal.org newdir]$chmod 700 c                                                                                
+[kaushal27@webminal.org newdir]$ls -lrth                                                                                   
+total 0                                                                                                                    
+-rwx------. 1 kaushal27 kaushal27 0 Oct 14 01:02 a
+-rwx------. 1 kaushal27 kaushal27 0 Oct 14 01:02 b
+-rwx------. 1 kaushal27 kaushal27 0 Oct 14 01:02 c
+[kaushal27@webminal.org newdir]$ 
